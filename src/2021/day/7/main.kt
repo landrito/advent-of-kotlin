@@ -5,29 +5,22 @@ import kotlin.math.abs
 fun main() {
   val cwd = Paths.get("").toAbsolutePath().toString()
   val input = File("$cwd/src/2021/day/7/input.txt").readLines().first()
-  println(partOne(input))
-  println(partTwo(input))
+  val crabs = input.split(',').map(String::toInt)
+  println(partOne(crabs))
+  println(partTwo(crabs))
 }
 
-fun partOne(input: String): Int {
-  return solution(input) { i, j -> abs(i - j) }
+fun partOne(crabs: List<Int>): Int {
+  return solution(crabs) { pos1, pos2 -> abs(pos1 - pos2) }
 }
 
-fun partTwo(input: String): Int {
-  return solution(input) { i, j ->
-    val delta = abs(i - j) + 1
-    (delta * (delta - 1)) / 2
+fun partTwo(crabs: List<Int>): Int {
+  return solution(crabs) { pos1, pos2: Int ->
+    (abs(pos1 - pos2)).let { (it * (it + 1)) / 2 }
   }
 }
 
-fun solution(input: String, costBetweenPositions: (i: Int, j: Int) -> Int): Int {
-  val numbers = input.split(',').map {
-    it.toInt()
-  }.sorted()
-  return (numbers.first()..numbers.last()).fold(Int.MAX_VALUE) { minFuel, i ->
-    val fuel = numbers.fold(0) { sum, j -> sum + costBetweenPositions(i, j) }
-    if (fuel < minFuel) {
-      fuel
-    } else minFuel
-  }
+fun solution(crabs: List<Int>, cost: (pos1: Int, pos2: Int) -> Int): Int {
+  val crabSum = {pos: Int -> crabs.sumOf{ crabPos: Int -> cost(pos, crabPos)}}
+  return (crabs.minOrNull()!!..crabs.maxOrNull()!!).minByOrNull(crabSum)!!.let(crabSum)
 }
