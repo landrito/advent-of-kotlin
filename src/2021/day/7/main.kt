@@ -1,3 +1,6 @@
+package `2021`.day.`7`
+
+
 import java.io.File
 import java.nio.file.Paths
 import kotlin.math.abs
