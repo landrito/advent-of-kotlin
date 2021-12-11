@@ -2,18 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="798296c1-23fe-41bd-92f7-21ac8a9111ff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/2021/day/8/example.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/2021/day/8/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/2021/day/8/main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/y2021/d9/example.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/y2021/d9/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/y2021/d9/main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/2021/day/7/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/2021/day/7/main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/2021/day/7/example.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/y2021/d7/example.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/2021/day/7/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/y2021/d7/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/2021/day/7/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/y2021/d7/main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/2021/day/8/example.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/y2021/d8/example.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/2021/day/8/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/y2021/d8/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/2021/day/8/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/y2021/d8/main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Worksheet" />
+      </list>
+    </option>
   </component>
   <component name="G3PluginsProjectSettings">
     <appliedSettings>
@@ -47,9 +58,16 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
-  <component name="RunManager" selected="Kotlin.MainKt (1)">
+  <component name="RunManager" selected="Kotlin.MainKt (2)">
     <configuration name="MainKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="2021.day.8.MainKt" />
+      <module name="advent-of-kotlin" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainKt (2)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="y2021.d9.MainKt" />
       <module name="advent-of-kotlin" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -71,6 +89,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.MainKt (2)" />
         <item itemvalue="Kotlin.MainKt (1)" />
         <item itemvalue="Kotlin.SolutionKt" />
         <item itemvalue="Kotlin.MainKt" />

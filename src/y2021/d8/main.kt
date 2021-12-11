@@ -1,11 +1,11 @@
-package `2021`.day.`8`
+package y2021.d8
 
 import java.io.File
 import java.nio.file.Paths
 
 fun main() {
   val cwd = Paths.get("").toAbsolutePath().toString()
-  val input = File("$cwd/src/2021/day/8/input.txt").readLines()
+  val input = File("$cwd/src/y2021/d8/input.txt").readLines()
   println(partOne(input))
   println(partTwo(input))
 }
