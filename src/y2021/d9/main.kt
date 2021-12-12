@@ -3,10 +3,11 @@ package y2021.d9
 import java.io.File
 import java.nio.file.Paths
 import java.util.ArrayDeque
+import y2021.shared.foldIndexed2D
+import y2021.shared.getOrNull
+
 
 typealias HeightMap = List<List<Int>>
-
-fun HeightMap.getOrNull(pos: Pair<Int, Int>) = getOrNull(pos.first)?.getOrNull(pos.second)
 
 fun HeightMap.adjacent(pos: Pair<Int, Int>): List<Int> = pos.let { (row, col) ->
   listOfNotNull(
@@ -35,14 +36,6 @@ fun HeightMap.isLow(pos: Pair<Int, Int>): Boolean =
     }
   }?: throw ArrayIndexOutOfBoundsException();
 
-
-fun <T, R> List<List<T>>.foldIndexed2D(
-  initial: R,
-  action: (acc: R, indices: Pair<Int, Int>, it: T) -> R,
-): R =
-  foldIndexed(initial) { i, outer, row ->
-    row.foldIndexed(outer) { j, inner, v -> action(inner, i to j, v) }
-  }
 
 fun List<Int>.product() = fold(1) {p, i -> p*i}
 

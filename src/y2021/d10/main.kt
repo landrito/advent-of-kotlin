@@ -4,7 +4,7 @@ import java.io.File
 import java.nio.file.Paths
 import java.util.Stack
 
-interface BracketError
+sealed interface BracketError
 
 data class IncorrectClosingBracket(val foundBracket: String) : BracketError
 

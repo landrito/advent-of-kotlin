@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="798296c1-23fe-41bd-92f7-21ac8a9111ff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/y2021/d10/example.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/y2021/d10/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/y2021/d10/main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/y2021/d11/example.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/y2021/d11/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/y2021/d11/main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/y2021/shared/grid.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/y2021/d10/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/y2021/d10/main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/y2021/d9/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/y2021/d9/main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Worksheet" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -46,7 +50,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/y2021/d10" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/y2021/d11" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -54,10 +58,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/y2021/d11" />
       <recent name="$PROJECT_DIR$/src/y2021/d10" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.MainKt (3)">
+  <component name="RunManager" selected="Kotlin.MainKt (4)">
     <configuration name="MainKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="2021.day.8.MainKt" />
       <module name="advent-of-kotlin" />
@@ -79,8 +84,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MainKt" />
+    <configuration name="MainKt (4)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="y2021.d11.MainKt" />
       <module name="advent-of-kotlin" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -95,11 +100,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.MainKt (4)" />
         <item itemvalue="Kotlin.MainKt (3)" />
         <item itemvalue="Kotlin.MainKt (2)" />
         <item itemvalue="Kotlin.MainKt (1)" />
         <item itemvalue="Kotlin.SolutionKt" />
-        <item itemvalue="Kotlin.MainKt" />
       </list>
     </recent_temporary>
   </component>
