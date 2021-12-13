@@ -2,6 +2,7 @@ package y2021.d13
 
 import java.io.File
 import java.nio.file.Paths
+import kotlin.math.max
 
 typealias Pos2D = Pair<Int, Int>
 
@@ -28,18 +29,20 @@ fun Set<Pos2D>.foldAlong(f: Fold) = when (f) {
     }
 }
 
-fun Set<Pos2D>.maxX() = fold(0) {max, (x, _) -> if (x > max) {x} else max }
-fun Set<Pos2D>.maxY() = fold(0) {max, (_, y) -> if (y > max) {y} else max }
+fun Set<Pos2D>.maxX() = fold(0) { cur, (x, _) -> max(cur, x) }
+fun Set<Pos2D>.maxY() = fold(0) { cur, (_, y) -> max(cur, y) }
 
 fun Set<Pos2D>.print() = (0..maxY()).forEach { y ->
-  (0..maxX()).fold("") {s, x ->
-    s + if(contains(x to y)) {'█'} else ' '
+  (0..maxX()).fold("") { s, x ->
+    s + if (contains(x to y)) {
+      '█'
+    } else ' '
   }.apply(::println)
 }
 
 fun partOne(dots: Set<Pos2D>, folds: List<Fold>) = folds.first().let { dots.foldAlong(it) }.size
 
-fun partTwo(dots: Set<Pos2D>, folds: List<Fold>) = folds.fold(dots) {d,f -> d.foldAlong(f)}
+fun partTwo(dots: Set<Pos2D>, folds: List<Fold>) = folds.fold(dots) { d, f -> d.foldAlong(f) }
 
 fun main() {
   val cwd = Paths.get("").toAbsolutePath().toString()
@@ -50,20 +53,21 @@ fun main() {
   partTwo(dots, folds).print()
 }
 
-fun parseInput(input: List<String>) = input.fold(setOf<Pos2D>() to listOf<Fold>()) { (dots, folds), line ->
-  if (line.startsWith("fold")) {
-    line.split(" ").last().split("=").let {
-      when (it.first()) {
-        "x" -> FoldAlongX(it.last().toInt())
-        "y" -> FoldAlongY(it.last().toInt())
-        else -> throw Error("Unable to parse line: `$line`")
+fun parseInput(input: List<String>) =
+  input.fold(setOf<Pos2D>() to listOf<Fold>()) { (dots, folds), line ->
+    if (line.startsWith("fold")) {
+      line.split(" ").last().split("=").let {
+        when (it.first()) {
+          "x" -> FoldAlongX(it.last().toInt())
+          "y" -> FoldAlongY(it.last().toInt())
+          else -> throw Error("Unable to parse line: `$line`")
+        }
+      }.let {
+        dots to folds.plus(it)
       }
-    }.let {
-      dots to folds.plus(it)
-    }
-  } else {
-    line.split(',').map(String::toInt).let {
-      dots.plus(it.first() to it.last()) to folds
+    } else {
+      line.split(',').map(String::toInt).let {
+        dots.plus(it.first() to it.last()) to folds
+      }
     }
   }
-}

@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="798296c1-23fe-41bd-92f7-21ac8a9111ff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/y2021/d13/example.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/y2021/d13/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/y2021/d13/main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/y2021/d13/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/y2021/d13/main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,16 +140,5 @@
     </ignored-roots>
     <MESSAGE value="More idiomatic day 7" />
     <option name="LAST_COMMIT_MESSAGE" value="More idiomatic day 7" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/y2021/d13/main.kt</url>
-          <line>58</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
