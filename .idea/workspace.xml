@@ -2,13 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="798296c1-23fe-41bd-92f7-21ac8a9111ff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/y2021/d11/example.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/y2021/d11/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/y2021/d11/main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/y2021/shared/grid.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/y2021/d12/example.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/y2021/d12/example2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/y2021/d12/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/y2021/d12/main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/y2021/d10/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/y2021/d10/main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/y2021/d9/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/y2021/d9/main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/y2021/d7/example.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/y2021/d07/example.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/y2021/d7/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/y2021/d07/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/y2021/d7/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/y2021/d07/main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/y2021/d8/example.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/y2021/d08/example.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/y2021/d8/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/y2021/d08/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/y2021/d8/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/y2021/d08/main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/y2021/d9/example.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/y2021/d09/example.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/y2021/d9/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/y2021/d09/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/y2021/d9/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/y2021/d09/main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +57,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/y2021/d11" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/y2021/d12" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -58,8 +65,12 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/y2021/d12" />
       <recent name="$PROJECT_DIR$/src/y2021/d11" />
       <recent name="$PROJECT_DIR$/src/y2021/d10" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/y2021/d12" />
     </key>
   </component>
   <component name="RunManager" selected="Kotlin.MainKt (4)">
@@ -84,8 +95,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainKt (4)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="y2021.d11.MainKt" />
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="y2021.d09.MainKt" />
+      <module name="advent-of-kotlin" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="y2021.d12.MainKt" />
       <module name="advent-of-kotlin" />
       <method v="2">
         <option name="Make" enabled="true" />
