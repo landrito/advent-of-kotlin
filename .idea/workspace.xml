@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="798296c1-23fe-41bd-92f7-21ac8a9111ff" name="Changes" comment="" />
+    <list default="true" id="798296c1-23fe-41bd-92f7-21ac8a9111ff" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/y2021/d15/example.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/y2021/d15/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/y2021/d15/main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/y2021/shared/collections.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/y2021/d09/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/y2021/d09/main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/y2021/shared/grid.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/y2021/shared/grid.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,7 +41,9 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="220ODoCxLo24XxD2R1ftzKKSPpW" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -44,7 +54,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="code.cleanup.on.save" value="true" />
     <property name="format.on.save" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/y2021/d14" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/y2021/d15" />
     <property name="optimize.imports.on.save" value="true" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -57,24 +67,17 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/y2021/d15" />
       <recent name="$PROJECT_DIR$/src/y2021/d14" />
       <recent name="$PROJECT_DIR$/src/y2021" />
       <recent name="$PROJECT_DIR$/src/y2021/d12" />
       <recent name="$PROJECT_DIR$/src/y2021/d11" />
-      <recent name="$PROJECT_DIR$/src/y2021/d10" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/y2021/d12" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.MainKt (4)">
-    <configuration name="MainKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="2021.day.8.MainKt" />
-      <module name="advent-of-kotlin" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Kotlin.MainKt (5)">
     <configuration name="MainKt (2)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="y2021.d13.MainKt" />
       <module name="advent-of-kotlin" />
@@ -96,8 +99,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="y2021.d12.MainKt" />
+    <configuration name="MainKt (5)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="y2021.d15.MainKt" />
       <module name="advent-of-kotlin" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -112,11 +115,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.MainKt (5)" />
         <item itemvalue="Kotlin.MainKt (4)" />
         <item itemvalue="Kotlin.MainKt (2)" />
         <item itemvalue="Kotlin.MainKt (3)" />
         <item itemvalue="Kotlin.MainKt (2)" />
-        <item itemvalue="Kotlin.MainKt (1)" />
       </list>
     </recent_temporary>
   </component>
