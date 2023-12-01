@@ -13,37 +13,27 @@ fun main() {
 fun partOne(lines: List<String>): Int {
   return lines.map { s ->
     findDigit(s, DigitPosition.FIRST) + findDigit(s, DigitPosition.LAST)
-  }
-    .map {digits ->  digits.toInt()}
-    .reduce(Int::plus)
+  }.sumOf { digits -> digits.toInt() }
 }
 
 fun partTwo(lines: List<String>): Int {
   val findWords = true
   return lines.map { s ->
     findDigit(s, DigitPosition.FIRST, findWords) + findDigit(s, DigitPosition.LAST, findWords)
-  }
-    .map {digits ->  digits.toInt()}
-    .reduce(Int::plus)
+  }.sumOf { digits -> digits.toInt() };
 }
 
-data class Replace(val regexString: String, val replacement: String)
-
-fun String.replace(r: Replace): String {
-  return this.replace(Regex(r.regexString), r.replacement)
-}
-
-val DIGIT_REPLACEMENTS = arrayOf(
+val DIGIT_REPLACEMENTS = mapOf(
+  "one" to "1", "1" to "1",
+  "two" to "2", "2" to "2",
+  "three" to "3", "3" to "3",
+  "four" to "4", "4" to "4",
+  "five" to "5", "5" to "5",
+  "six" to "6", "6" to "6",
+  "seven" to "7", "7" to "7",
+  "eight" to "8", "8" to "8",
+  "nine" to "9", "9" to "9",
   // Digit 0 is not specified as a spelled out digit in the spec.
-  Replace("one", "1"),
-  Replace("two", "2"),
-  Replace("three", "3"),
-  Replace("four", "4"),
-  Replace("five", "5"),
-  Replace("six", "6"),
-  Replace("seven", "7"),
-  Replace("eight", "8"),
-  Replace("nine", "9"),
 )
 
 enum class DigitPosition {
@@ -51,14 +41,10 @@ enum class DigitPosition {
 }
 
 fun findDigit(s: String, position: DigitPosition, findWords: Boolean = false): String {
-  val queryStrings = if(findWords) {
-    DIGIT_REPLACEMENTS.flatMap{ r -> listOf(r.regexString, r.replacement) }
-  } else DIGIT_REPLACEMENTS.map{ r -> r.replacement }
-  val result = if(position == DigitPosition.FIRST) s.findAnyOf(queryStrings) else s.findLastAnyOf(queryStrings)
-  val digitOrWord = result?.second ?: "0"
-  return digitOrWord.let(::replaceDigitWordsForDigits)
+  val query = if (findWords) DIGIT_REPLACEMENTS.keys else DIGIT_REPLACEMENTS.values.toSet()
+  return if (position == DigitPosition.FIRST)
+    s.findAnyOf(query)!!.let(Pair<Int, String>::second).let{d -> DIGIT_REPLACEMENTS[d]}!!
+  else
+    s.findLastAnyOf(query)!!.let(Pair<Int, String>::second).let{d -> DIGIT_REPLACEMENTS[d]}!!
 }
 
-fun replaceDigitWordsForDigits(s: String): String {
-  return DIGIT_REPLACEMENTS.fold(s) { result, replacement -> result.replace(replacement) }
-}
