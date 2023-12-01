@@ -6,21 +6,14 @@ import java.nio.file.Paths
 fun main() {
   val cwd = Paths.get("").toAbsolutePath().toString()
   val input = File("$cwd/src/y2023/d01/input.txt").readLines()
-  println(partOne(input))
-  println(partTwo(input))
+  println(solution(input))
+  println(solution(input, findWords = true))
 }
 
-fun partOne(lines: List<String>): Int {
-  return lines.map { s ->
-    findDigit(s, DigitPosition.FIRST) + findDigit(s, DigitPosition.LAST)
-  }.sumOf { digits -> digits.toInt() }
-}
-
-fun partTwo(lines: List<String>): Int {
-  val findWords = true
+fun solution(lines: List<String>, findWords: Boolean = false): Int {
   return lines.map { s ->
     findDigit(s, DigitPosition.FIRST, findWords) + findDigit(s, DigitPosition.LAST, findWords)
-  }.sumOf { digits -> digits.toInt() };
+  }.sumOf { digits -> digits.toInt() }
 }
 
 val DIGIT_REPLACEMENTS = mapOf(
