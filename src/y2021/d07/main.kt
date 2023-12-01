@@ -7,7 +7,7 @@ import kotlin.math.abs
 
 fun main() {
   val cwd = Paths.get("").toAbsolutePath().toString()
-  val input = File("$cwd/src/y2021/d7/input.txt").readLines().first()
+  val input = File("$cwd/src/y2021/d07/input.txt").readLines().first()
   val crabs = input.split(',').map(String::toInt)
   println(partOne(crabs))
   println(partTwo(crabs))
