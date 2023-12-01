@@ -42,9 +42,8 @@ enum class DigitPosition {
 
 fun findDigit(s: String, position: DigitPosition, findWords: Boolean = false): String {
   val query = if (findWords) DIGIT_REPLACEMENTS.keys else DIGIT_REPLACEMENTS.values.toSet()
-  return if (position == DigitPosition.FIRST)
-    s.findAnyOf(query)!!.let(Pair<Int, String>::second).let{d -> DIGIT_REPLACEMENTS[d]}!!
-  else
-    s.findLastAnyOf(query)!!.let(Pair<Int, String>::second).let{d -> DIGIT_REPLACEMENTS[d]}!!
+  val action = if (position == DigitPosition.FIRST) {q: Collection<String> -> s.findAnyOf(q)}
+    else {q: Collection<String> -> s.findLastAnyOf(q)}
+  return action.invoke(query)!!.let(Pair<Int, String>::second).let{d -> DIGIT_REPLACEMENTS[d]}!!
 }
 
