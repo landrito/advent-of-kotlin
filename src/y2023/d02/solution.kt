@@ -23,7 +23,7 @@ typealias CubeCounts = Map<String, Int>
 data class Game(val id: Int, val cubeCounts: List<CubeCounts>)
 
 fun gameFrom(line: String): Game {
-  val id = "\\d+".toRegex().find(line)!!.value.toInt()
+  val id = Regex("\\d+").find(line)!!.value.toInt()
   val cubeCounts = line.split(":")
     .last()
     .split(";")
@@ -31,8 +31,7 @@ fun gameFrom(line: String): Game {
       round.split(",")
         .map { s -> s.trim() }
         .map { s -> s.split(" ") }
-        .map { parts -> Pair(parts[1], parts[0].toInt()) }
-        .associate { it }
+        .associate { parts -> parts[1] to parts[0].toInt() }
     }
 
   return Game(id, cubeCounts)
@@ -41,14 +40,13 @@ fun gameFrom(line: String): Game {
 fun maxValuesOf(a: CubeCounts, b: CubeCounts): CubeCounts {
   return b
     .toList()
-    .map { (k, v) -> k to maxOf(v, a.getOrElse(k) { 0 }) }
-    .associate { it }
+    .associate { (k, v) -> k to maxOf(v, a.getOrElse(k) { 0 }) }
     .let { maxMap -> a.plus(maxMap) }
 }
 
 fun CubeCounts.possibleIn(bagCounts: CubeCounts): Boolean {
   return this.toList()
-    .fold(true) { result, (color, count) ->
+    .fold(initial = true) { result, (color, count) ->
       result && count <= bagCounts.getOrElse(color) { 0 }
     }
 }
