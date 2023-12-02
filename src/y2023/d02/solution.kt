@@ -8,13 +8,13 @@ fun partOne(lines: List<String>): Int {
   )
 
   return lines.map(::gameFrom)
-    .map { g -> g.id to g.cubeCounts.reduce { result, current -> result.maxValues(current) } }
+    .map { g -> g.id to g.cubeCounts.reduce(::maxValuesOf) }
     .sumOf { (id, maxCounts) -> if (maxCounts.possibleIn(bag)) id else 0 }
 }
 
 fun partTwo(lines: List<String>): Int {
   return lines.map(::gameFrom)
-    .map { g -> g.cubeCounts.reduce { result, current -> result.maxValues(current) } }
+    .map { g -> g.cubeCounts.reduce(::maxValuesOf) }
     .sumOf { counts -> counts.values.reduce { result, current -> result * current } }
 }
 
@@ -38,12 +38,12 @@ fun gameFrom(line: String): Game {
   return Game(id, cubeCounts)
 }
 
-fun CubeCounts.maxValues(other: CubeCounts): CubeCounts {
-  return other
+fun maxValuesOf(a: CubeCounts, b: CubeCounts): CubeCounts {
+  return b
     .toList()
-    .map { (k, v) -> k to maxOf(v, this.getOrElse(k) { 0 }) }
+    .map { (k, v) -> k to maxOf(v, a.getOrElse(k) { 0 }) }
     .associate { it }
-    .let { maxMap -> this.plus(maxMap) }
+    .let { maxMap -> a.plus(maxMap) }
 }
 
 fun CubeCounts.possibleIn(bagCounts: CubeCounts): Boolean {
