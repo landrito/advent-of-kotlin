@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="798296c1-23fe-41bd-92f7-21ac8a9111ff" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/y2023/d04/SolutionTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/y2023/d04/example.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/y2023/d04/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/y2023/d04/main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/y2023/d04/solution.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/y2023/d03/SolutionTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/y2023/d03/SolutionTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/y2023/d03/solution.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/y2023/d03/solution.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +72,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/landrito/Code/advent-of-kotlin/src/y2023/d03",
+    "last_opened_file_path": "/Users/landrito/Code/advent-of-kotlin/src/y2023/d04",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -83,11 +86,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/y2023/d04" />
       <recent name="$PROJECT_DIR$/src/y2023/d03" />
       <recent name="$PROJECT_DIR$/src/y2023/d02" />
       <recent name="$PROJECT_DIR$/src/y2021/d25" />
       <recent name="$PROJECT_DIR$/src/y2021/d16" />
-      <recent name="$PROJECT_DIR$/src/y2021/d15" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/y2021/d12" />
@@ -99,33 +102,34 @@
       <recent name="y2023.d02" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.MainKt (1)">
-    <configuration name="SolutionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Kotlin.MainKt">
+    <configuration name="SolutionTest.partOneExampleTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="advent-of-kotlin" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="y2023.d02.*" />
+          <option name="PATTERN" value="y2023.d04.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="y2023.d02" />
-      <option name="MAIN_CLASS_NAME" value="y2023.d02.SolutionTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="y2023.d04" />
+      <option name="MAIN_CLASS_NAME" value="y2023.d04.SolutionTest" />
+      <option name="METHOD_NAME" value="partOneExampleTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SolutionTest.partOneExampleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SolutionTest.partTwoExampleTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="advent-of-kotlin" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="y2023.d03.*" />
+          <option name="PATTERN" value="y2023.d04.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="y2023.d03" />
-      <option name="MAIN_CLASS_NAME" value="y2023.d03.SolutionTest" />
-      <option name="METHOD_NAME" value="partOneExampleTest" />
+      <option name="PACKAGE_NAME" value="y2023.d04" />
+      <option name="MAIN_CLASS_NAME" value="y2023.d04.SolutionTest" />
+      <option name="METHOD_NAME" value="partTwoExampleTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -154,8 +158,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainKt (2)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="y2023.d01.MainKt" />
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="y2023.d04.MainKt" />
       <module name="advent-of-kotlin" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -163,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="JUnit.SolutionTest.partTwoExampleTest (1)" />
+        <item itemvalue="JUnit.SolutionTest.partOneExampleTest (1)" />
         <item itemvalue="Kotlin.MainKt (1)" />
         <item itemvalue="JUnit.SolutionTest.partTwoExampleTest" />
-        <item itemvalue="JUnit.SolutionTest.partOneExampleTest" />
-        <item itemvalue="Kotlin.MainKt (2)" />
-        <item itemvalue="JUnit.SolutionTest" />
       </list>
     </recent_temporary>
   </component>
@@ -183,7 +187,7 @@
       <workItem from="1701442827178" duration="4434000" />
       <workItem from="1701448293034" duration="4667000" />
       <workItem from="1701469758803" duration="12273000" />
-      <workItem from="1701503311646" duration="14513000" />
+      <workItem from="1701503311646" duration="19128000" />
     </task>
     <task id="LOCAL-00001" summary="More idiomatic day 7">
       <created>1638978858775</created>
