@@ -23,7 +23,7 @@ typealias CubeCounts = Map<String, Int>
 data class Game(val id: Int, val cubeCounts: List<CubeCounts>)
 
 fun gameFrom(line: String): Game {
-  val id = Regex("\\d+").find(line)!!.value.toInt()
+  val id = Regex(""""\\d+""").find(line)!!.value.toInt()
   val cubeCounts = line.split(":")
     .last()
     .split(";")
