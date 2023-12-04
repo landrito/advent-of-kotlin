@@ -12,4 +12,9 @@ class SolutionTest {
   fun partOneExampleTest() {
     expect(4361) { partOne(input) }
   }
+
+  @org.junit.jupiter.api.Test
+  fun partTwoExampleTest() {
+    expect(467835) { partTwo(input) }
+  }
 }
