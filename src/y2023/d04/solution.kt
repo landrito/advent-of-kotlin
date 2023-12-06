@@ -10,11 +10,9 @@ fun partOne(lines: List<String>): Int {
 
 data class Card(val winningNumbers: Set<Int>, val numbers: Set<Int>)
 
-fun cardFrom(line: String): Card {
-  return line.split(":").last().split("|")
-    .map { part -> part.trim().let { INT_REGEX.findAll(it) }.map { it.value }.map { it.toInt() }.toSet() }
-    .let { Card(it.first(), it.last()) }
-}
+fun cardFrom(line: String): Card = line.split(":").last().split("|")
+  .map { part -> part.trim().let { INT_REGEX.findAll(it) }.map { it.value }.map { it.toInt() }.toSet() }
+  .let { Card(it.first(), it.last()) }
 
 fun Card.countMatches(): Int {
   return this.winningNumbers.intersect(this.numbers).size
