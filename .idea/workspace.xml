@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="798296c1-23fe-41bd-92f7-21ac8a9111ff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/y2023/d06/SolutionTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/y2023/d06/example.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/y2023/d06/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/y2023/d06/main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/y2023/d06/solution.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/y2023/d06/solution.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/y2023/d06/solution.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +187,7 @@
       <workItem from="1701718392382" duration="984000" />
       <workItem from="1701761654238" duration="8292000" />
       <workItem from="1701801625700" duration="10939000" />
-      <workItem from="1701892133101" duration="2413000" />
+      <workItem from="1701892133101" duration="3319000" />
     </task>
     <task id="LOCAL-00001" summary="More idiomatic day 7">
       <created>1638978858775</created>

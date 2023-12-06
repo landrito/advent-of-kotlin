@@ -7,6 +7,9 @@ typealias Race = Pair<Long, Long>
 fun partOne(lines: List<String>): Long =
   races(lines).map { it.waysToWin() }.reduce { a, b -> a * b }
 
+fun partTwo(lines: List<String>): Long =
+  lines.map { it.replace(" ", "") }.let(::races).map { it.waysToWin() }.first()
+
 fun races(lines: List<String>): Sequence<Race> =
   lines.first().longs().zip(lines.last().longs())
 
@@ -19,6 +22,3 @@ fun Race.waysToWin(): Long = this.let { (time, distance) ->
 fun String.longs() = INT_REGEX.findAll(this).map { it.value.toLong() }
 
 fun distance(timeButtonHeld: Long, raceTime: Long) = (raceTime - timeButtonHeld) * timeButtonHeld
-
-fun partTwo(lines: List<String>): Long =
-  lines.map { it.replace(" ", "") }.let(::races).map { it.waysToWin() }.first()
